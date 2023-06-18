@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/datajpa
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+server:
+  error:
+    whitelabel:
+      enabled: false #spring이 오류처리 화면을 못 찾을 경우 whitelabel 오류페이지 적용
+    #path: /error
+
+logging.leve:
+  org.hibernate.SQL: debug
+
+file:
+  dir: C:\Users\SUN\Desktop\laboratory_spring\file\ #마지막에 \포함시켜야 함
