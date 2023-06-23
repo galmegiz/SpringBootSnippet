@@ -21,6 +21,12 @@ server:
 
 logging.leve:
   org.hibernate.SQL: debug
+#logging.level.root=info -> 전체 로그 레벨 설정(기본 info)
+#hello.spirngmvc 패키지와 그 하위 로그 레벨 설정
+#logging.level.hello.springmvc=error
 
+
+#spring.thymeleaf.prefix=classpath:/templates/
+#spring.thymeleaf.suffix=.html
 file:
   dir: C:\Users\SUN\Desktop\laboratory_spring\file\ #마지막에 \포함시켜야 함

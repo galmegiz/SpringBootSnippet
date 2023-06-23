@@ -12,6 +12,7 @@ import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.ModelAndViewContainer;
 
+//handler(controller) 호출 전 실행되어서 각 parameter를 처리 가능한지 확인하고 처리해서 객체로 반환
 @Slf4j
 public class LoginMemberArgumentResolver implements HandlerMethodArgumentResolver {
     @Override
