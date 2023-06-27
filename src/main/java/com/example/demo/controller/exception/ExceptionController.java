@@ -86,6 +86,9 @@ public class ExceptionController {
         return "error-page/500";
     }
 
-
+    @GetMapping("/ex6")
+    public String ex6() throws Exception {
+        throw new Exception();
+    }
 
 }

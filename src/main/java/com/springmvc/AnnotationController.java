@@ -20,7 +20,7 @@ import java.util.Map;
 //매개변수는 HandlerMethodArgumentResolver에서 처리
 //응답은 HandlerMethodReturnValueHandler에서 처리
 //일부 매개변수의 경우 ArgumentResolver가 HttpMessagerConverter 구현체 이용해 처리
-//@RequestMapping, @Controller -> RequestmappingHandlerMapping ->
+//@RequestMapping, @Controller -> RequestmappingHandlerMapping에서 controller 찾음 -> RequestMappingHandlerAdapter
 //애노테이션 기반이기 때문에 메소드 이름은 자유
 @Controller
 @Slf4j
